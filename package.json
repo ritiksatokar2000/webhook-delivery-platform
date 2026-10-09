@@ -1,0 +1,24 @@
+{
+  "name": "webhook-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "worker": "node src/workers/webhookWorker.js",
+    "customer":"node test/customerServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bullmq": "^6.3.8",
+    "dotenv": "^18.0.2",
+    "express": "^5.2.1",
+    "ioredis": "^6.0.0",
+    "pg": "^8.23.0"
+  }
+}
